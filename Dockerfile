@@ -1,5 +1,5 @@
 FROM buildpack-deps:bionic
 
 RUN apt-get update \
- && apt-get install python-dev python-pip \
+ && apt-get install -yq --no-install-recommends python-dev python-pip \
  && rm -rf /var/lib/apt/lists/*
